@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  recordnumberclient: 
+  recordnumber: 
+  group: MyString
+  module: MyString
+  dms: MyString
+  dateexe: 
+
+two:
+  recordnumberclient: 
+  recordnumber: 
+  group: MyString
+  module: MyString
+  dms: MyString
+  dateexe: 

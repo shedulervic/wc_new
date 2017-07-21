@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Recordnumberclient:</strong>
+  <%= @incident.recordnumberclient %>
+</p>
+
+<p>
+  <strong>Recordnumber:</strong>
+  <%= @incident.recordnumber %>
+</p>
+
+<p>
+  <strong>Group:</strong>
+  <%= @incident.group %>
+</p>
+
+<p>
+  <strong>Module:</strong>
+  <%= @incident.module %>
+</p>
+
+<p>
+  <strong>Dms:</strong>
+  <%= @incident.dms %>
+</p>
+
+<p>
+  <strong>Dateexe:</strong>
+  <%= @incident.dateexe %>
+</p>
+
+<%= link_to 'Edit', edit_incident_path(@incident) %> |
+<%= link_to 'Back', incidents_path %>

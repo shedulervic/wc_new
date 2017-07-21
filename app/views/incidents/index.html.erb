@@ -1,0 +1,37 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Incidents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Recordnumberclient</th>
+      <th>Recordnumber</th>
+      <th>Group</th>
+      <th>Module</th>
+      <th>Dms</th>
+      <th>Dateexe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @incidents.each do |incident| %>
+      <tr>
+        <td><%= incident.recordnumberclient %></td>
+        <td><%= incident.recordnumber %></td>
+        <td><%= incident.group %></td>
+        <td><%= incident.module %></td>
+        <td><%= incident.dms %></td>
+        <td><%= incident.dateexe %></td>
+        <td><%= link_to 'Show', incident %></td>
+        <td><%= link_to 'Edit', edit_incident_path(incident) %></td>
+        <td><%= link_to 'Destroy', incident, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Incident', new_incident_path %>
